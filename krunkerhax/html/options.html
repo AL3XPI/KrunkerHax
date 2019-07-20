@@ -1,0 +1,26 @@
+<html ng-app="App">
+	<head>
+		<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+		<style>
+			.inject-button {
+			  position: absolute;
+			  left: 50%;
+			  top: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+	<body ng-controller="AppCtrl as AC">
+		<div class="inject-button" id="inject-button">
+			<form>
+  				<button class="btn btn-danger btn-lg" ng-click="AC.saveConfig()">
+					<i class="save icon"></i>
+					Inject Funk's Krunker Cheat
+				</button>
+			</form>	
+		</div>
+		<script src="../js/angular.js"></script>
+		<script src="../js/options.js"></script>
+	</body>
+</html>
